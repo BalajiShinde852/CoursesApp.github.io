@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    tools:context=".Afmec">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="MEC And CEC Courses"
+    android:gravity="center"
+    android:textSize="20dp"/>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mc1"
+        app:cardCornerRadius="20dp"
+        android:layout_margin="20dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Professional Degrees"
+            android:textSize="20dp"
+            android:padding="10dp"
+            android:gravity="center"
+            android:background="#1c1c"/>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mc2"
+        app:cardCornerRadius="20dp"
+        android:layout_margin="20dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Integrated Degrees"
+            android:padding="10dp"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:background="#1c1c"/>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        android:id="@+id/mc3"
+        android:layout_margin="20dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Other Bachelor Degrees"
+            android:textSize="20dp"
+            android:padding="10dp"
+            android:gravity="center"
+            android:background="#1c1c"/>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mc4"
+        app:cardCornerRadius="20dp"
+        android:layout_margin="20dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Other Diploma Courses"
+            android:textSize="20dp"
+            android:padding="10dp"
+            android:gravity="center"
+            android:background="#1c1c"/>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mc5"
+        app:cardCornerRadius="20dp"
+        android:layout_margin="20dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Certificate And Professional  Courses"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:background="#1c1c"/>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mc6"
+        app:cardCornerRadius="20dp"
+        android:layout_margin="20dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Non-MEC Courses"
+            android:padding="10dp"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:background="#1c1c"/>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
