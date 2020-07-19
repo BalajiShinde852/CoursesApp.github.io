@@ -3,8 +3,10 @@ package com.example.coursesapp;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -16,36 +18,68 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class Inter extends AppCompatActivity {
-
-    ListView ls;
-    String[] inter12={"MPC","BiPC","MEC","CEC","HEC","M/BiPC"};
+    private CardView afMpc,afBpc,afCec,afHec,afMec,afMBpc;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inter);
-        ls=(ListView)findViewById(R.id.lvinter);
-        MyAdapter adapter=new MyAdapter( this,inter12);
-        ls.setAdapter(adapter);
-    }
-    class MyAdapter extends ArrayAdapter<String>
-    {
-        Context context;
-        String rinter[];
-        MyAdapter(Context c,String course[])
-        {
-            super(c,R.layout.interrow,R.id.intercourse,course);
-            this.context=c;
-            this.rinter=course;
 
-        }
-        @NonNull
-        @Override
-        public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
-            LayoutInflater layoutInflater=(LayoutInflater)getApplicationContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            View interrow=layoutInflater.inflate(R.layout.interrow,parent,false);
-            TextView t=interrow.findViewById(R.id.intercourse);
-            t.setText(rinter[position]);
-            return interrow;
-        }
+        afMpc = (CardView) findViewById(R.id.afmpc);
+        afBpc = (CardView) findViewById(R.id.afbipc);
+        afCec = (CardView) findViewById(R.id.afcec);
+        afMec = (CardView) findViewById(R.id.afmec);
+        afMBpc = (CardView) findViewById(R.id.afMBipc);
+        afHec = (CardView) findViewById(R.id.afhec);
+
+        afMpc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(Inter.this,Afmpc.class);
+                startActivity(i);
+            }
+        });
+
+
+        afBpc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(Inter.this,Afbipc.class);
+                startActivity(i);
+            }
+        });
+
+        afCec.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(Inter.this,After12.class);
+                startActivity(i);
+            }
+        });
+
+        afHec.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(Inter.this,Afhec.class);
+                startActivity(i);
+            }
+        });
+
+        afMec.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(Inter.this,Afmec.class);
+                startActivity(i);
+            }
+        });
+
+
+        afMBpc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(Inter.this,After12.class);
+                startActivity(i);
+            }
+        });
+
     }
 }

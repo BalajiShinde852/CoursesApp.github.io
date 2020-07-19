@@ -12,6 +12,7 @@ public class Aftm1 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_aftm1);
+
         ListView ls = findViewById(R.id.lvm1);
         String names[] = {"1 B.E. (Aeronautical Engineering)",
                 "2 B.E. (Aerospace Engineering)",

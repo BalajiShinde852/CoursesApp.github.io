@@ -6,6 +6,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:layout_margin="30dp"
+    android:layout_gravity="center"
+    android:gravity="center"
     tools:context=".After12">
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
