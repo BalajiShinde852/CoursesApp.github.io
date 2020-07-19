@@ -13,9 +13,11 @@ public class After10 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_after10);
+
         Inter=(CardView)findViewById(R.id.inter);
         Diploma=(CardView)findViewById(R.id.diploma);
         Iti=(CardView)findViewById(R.id.iti);
+
         Inter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -23,6 +25,7 @@ public class After10 extends AppCompatActivity {
                 startActivity(i1);
             }
         });
+
         Diploma.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -30,6 +33,7 @@ public class After10 extends AppCompatActivity {
                 startActivity(i2);
             }
         });
+
         Iti.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -37,5 +41,6 @@ public class After10 extends AppCompatActivity {
                 startActivity(i3);
             }
         });
+
     }
 }

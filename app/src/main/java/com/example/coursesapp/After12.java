@@ -13,10 +13,12 @@ public class After12 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_after12);
+
         c1=findViewById(R.id.afmpc);
         c2=findViewById(R.id.afbipc);
         c3=findViewById(R.id.afmec);
         c4=findViewById(R.id.afhec);
+
         c1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -24,6 +26,7 @@ public class After12 extends AppCompatActivity {
                 startActivity(i1);
             }
         });
+
         c2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -31,6 +34,7 @@ public class After12 extends AppCompatActivity {
                 startActivity(i2);
             }
         });
+        
         c3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -38,6 +42,7 @@ public class After12 extends AppCompatActivity {
                 startActivity(i3);
             }
         });
+
         c4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

@@ -12,10 +12,64 @@
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".After10"
+            android:label="@string/app_name"/>
+        <activity android:name=".Inter"/>
+        <activity android:name=".Diploma"/>
+        <activity android:name=".Iti"/>
+        
+        <activity android:name=".After12"/>
+        <activity android:name=".Aftb9"/>
+        <activity android:name=".Aftb10"/>
+        <activity android:name=".Aftm1"/>
+        <activity android:name=".Aftm2"/>
+        <activity android:name=".Aftm3"/>
+        <activity android:name=".Aftm4"/>
+        <activity android:name=".Aftm5"/>
+        <activity android:name=".Aftm6"/>
+        <activity android:name=".Cmc1"/>
+        <activity android:name=".Dipnoneng"/>
+        <activity android:name=".Cmc2"/>
+        <activity android:name=".Cmc3"/>
+        <activity android:name=".Cmc4"/>
+        <activity android:name=".Cmc5"/>
+        <activity android:name=".Cmc6"/>
+        <activity android:name=".Dipeng"/>
+        <activity android:name=".He1"/>
+        <activity android:name=".He2"/>
+        <activity android:name=".He3"/>
+        <activity android:name=".He4"/>
+        <activity android:name=".He5"/>
+        <activity android:name=".Itieng"/>
+        <activity android:name=".Itinon"/>
+        <activity android:name=".Noneng1"/>
+        <activity android:name=".Noneng2"/>
+        <activity android:name=".Noneng3"/>
+        <activity android:name=".Noneng4"/>
+        <activity android:name=".Noneng5"/>
+        <activity android:name=".Noneng6"/>
+
+        <activity android:name=".CvExams"/>
+        <activity android:name=".CvPG"/>
+        <activity android:name=".Afbipc"/>
+        <activity android:name=".Afhec"/>
+        <activity android:name=".Afmec"/>
+        <activity android:name=".Afmpc"/>
+        <activity android:name=".Aftb1"/>
+        <activity android:name=".Aftb2"/>
+        <activity android:name=".Aftb3"/>
+        <activity android:name=".Aftb11"/>
+        <activity android:name=".Aftb4"/>
+        <activity android:name=".Aftb5"/>
+        <activity android:name=".Aftb6"/>
+        <activity android:name=".Aftb7"/>
+        <activity android:name=".Aftb8"/>
+        
+
     </application>
 
 </manifest>

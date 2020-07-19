@@ -2,9 +2,11 @@ package com.example.coursesapp;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -28,20 +30,22 @@ public class Dipeng extends AppCompatActivity {
     class MyAdapter extends ArrayAdapter<String>
     {
         Context context;
-        String dipcourse[];
-        MyAdapter(Context c,String dip[])
+        String[] dipcourse;
+        MyAdapter(Context c, String[] dip)
         {
             super(c,R.layout.roweng,R.id.dieng,dip);
             this.context=c;
             this.dipcourse=dip;
         }
 
+        @RequiresApi(api = Build.VERSION_CODES.M)
         @NonNull
         @Override
         public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
             LayoutInflater layoutInflater=(LayoutInflater)getApplicationContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            View roweng=layoutInflater.inflate(R.layout.roweng,parent,false);
+            View roweng = layoutInflater.inflate(R.layout.roweng,parent,false);
             TextView t=roweng.findViewById(R.id.dieng);
+            t.setTextColor(getColor(R.color.black));
             t.setText(dipcourse[position]);
             return roweng;
         }
